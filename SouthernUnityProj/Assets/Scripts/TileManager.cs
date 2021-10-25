@@ -11,16 +11,13 @@ public class TileManager : MonoBehaviour {
             Debug.LogError("2 TileManagers in scene. Destroying older TileManager.");
         }
         Instance = this;
+        map = new Tile[mapSize, mapSize];
+        MapFromChildren();
     }
 
     public int mapSize;
 
     public Tile[,] map;
-
-    void Start() {
-        map = new Tile[mapSize, mapSize];
-        MapFromChildren();
-    }
 
     public bool isObstacle(int x, int y) {
         if(x < 0 || x >= mapSize || y < 0 || y >= mapSize)
@@ -32,6 +29,10 @@ public class TileManager : MonoBehaviour {
         if(x < 0 || x >= mapSize || y < 0 || y >= mapSize)
             return null;
         else return map[x, y];
+    }
+
+    public Tile getTile(Vector3 pos) {
+        return getTile(Tile.WorldToTileSpace(pos).x, Tile.WorldToTileSpace(pos).y);
     }
 
     public Tile getTile(GameObject o) {

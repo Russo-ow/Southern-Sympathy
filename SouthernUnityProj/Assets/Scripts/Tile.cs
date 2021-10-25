@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour {
     public bool isObstacle;
+    public bool isGoal;
+    public bool isTarget;
+
     public Vector2Int pos;
+
+    public MeshRenderer mr;
+    public Material normalTile;
+    public Material targetTile;
 
     private void Awake() {
         pos = WorldToTileSpace(transform.position);
+    }
+
+    private void Update() {
+        mr.material = isTarget ? targetTile : normalTile;
     }
 
     public static Vector2Int WorldToTileSpace(Vector3 p) {

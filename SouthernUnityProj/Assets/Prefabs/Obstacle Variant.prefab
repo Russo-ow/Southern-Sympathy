@@ -8,9 +8,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 215452575764597034, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
+      propertyPath: mr
+      value: 
+      objectReference: {fileID: 594729089807214217, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
+    - target: {fileID: 215452575764597034, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
       propertyPath: isObstacle
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 215452575764597034, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
+      propertyPath: normalTile
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c81c8cecec97a84d994730f5404e7ef, type: 2}
+    - target: {fileID: 215452575764597034, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
+      propertyPath: targetTile
+      value: 
+      objectReference: {fileID: 2100000, guid: b507b6dd96516b0449c522b4ffe2c406, type: 2}
     - target: {fileID: 594729089807214217, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -61,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 594729089807214223, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}
       propertyPath: m_Name
-      value: Obstacle
+      value: Obstacle Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01aa7292257b34947a292d47b2a0cf1f, type: 3}

@@ -110,4 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isObstacle: 0
+  isGoal: 0
+  isTarget: 0
   pos: {x: 0, y: 0}
+  mr: {fileID: 594729089807214217}
+  normalTile: {fileID: 2100000, guid: 4c81c8cecec97a84d994730f5404e7ef, type: 2}
+  targetTile: {fileID: 2100000, guid: b507b6dd96516b0449c522b4ffe2c406, type: 2}
