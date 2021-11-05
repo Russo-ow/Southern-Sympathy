@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -39,5 +40,9 @@ public class PauseMenu : MonoBehaviour
         PauseScreen.SetActive(true);
         Time.timeScale = 0f;
         IsGamePaused = true;
+    }
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
