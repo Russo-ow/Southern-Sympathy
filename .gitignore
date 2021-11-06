@@ -63,3 +63,8 @@ SouthernUnityProj/Library/expandedItems
 SouthernUnityProj/Library/SourceAssetDB
 SouthernUnityProj/Library/ArtifactDB
 SouthernUnityProj/Library/expandedItems
+SouthernUnityProj/Library/ArtifactDB
+*.dll
+*.dll
+SouthernUnityProj/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+SouthernUnityProj/Library/ArtifactDB
