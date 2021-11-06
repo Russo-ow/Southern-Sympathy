@@ -13,9 +13,6 @@ public class Enemy : MonoBehaviour, TurnObject {
 
     void Start() {
         UpdateTargedTiles();
-    }
-
-    void Awake() {
         TurnManager.Instance.turnObjects.Add(this);
     }
 

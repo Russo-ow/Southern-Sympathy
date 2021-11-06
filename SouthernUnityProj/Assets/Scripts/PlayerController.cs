@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour, TurnObject {
 
     Vector3 targetPos;
 
-    void Awake() {
+    void Start() {
         TurnManager.Instance.turnObjects.Add(this);
     }
 
