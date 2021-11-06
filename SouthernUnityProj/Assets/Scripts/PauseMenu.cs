@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    void Resume()
+    public void Resume()
     {
         PauseScreen.SetActive(false);
         Time.timeScale = 1f;
@@ -41,8 +41,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         IsGamePaused = true;
     }
-    void Restart()
+    public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
