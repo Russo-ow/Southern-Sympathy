@@ -3,6 +3,9 @@
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
 /[Ll]ibrary/
+
+SouthernUnityProj/Library/
+
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -57,14 +60,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-SouthernUnityProj/Library/SourceAssetDB
-SouthernUnityProj/Library/expandedItems
-SouthernUnityProj/Library/SourceAssetDB
-SouthernUnityProj/Library/ArtifactDB
-SouthernUnityProj/Library/expandedItems
-SouthernUnityProj/Library/ArtifactDB
-*.dll
-*.dll
-SouthernUnityProj/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-SouthernUnityProj/Library/ArtifactDB
