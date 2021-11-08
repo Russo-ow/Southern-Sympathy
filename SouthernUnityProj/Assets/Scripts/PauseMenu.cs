@@ -49,4 +49,15 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Main_Menu");
     }
+    public void PauseButton()
+    {
+        if (IsGamePaused)
+        {
+            Resume();
+        }
+        else
+        {
+            Pause();
+        }
+    }
 }
