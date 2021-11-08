@@ -46,8 +46,7 @@ public class PlayerController : MonoBehaviour, TurnObject {
                     }
                 }
             }
-        }
-        else {
+        } else {
             RaycastHit hit;
             if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.main.transform.forward, out hit)) {
                 Tile targetTile = TileManager.Instance.getTile(hit.point);
@@ -67,11 +66,11 @@ public class PlayerController : MonoBehaviour, TurnObject {
     public void TurnLateUpdate() {
         Tile currentTile = TileManager.Instance.getTile(targetPos);
         if(currentTile.isTarget) {
-            //Death
+            FindObjectOfType<LosePopupFlag>().gameObject.SetActive(true);
             Debug.Log("Death");
         }
         if(currentTile.isGoal) {
-            //Reached Goal
+            FindObjectOfType<WinPopupFlag>().gameObject.SetActive(true);
             Debug.Log("Goal");
         }
     }
