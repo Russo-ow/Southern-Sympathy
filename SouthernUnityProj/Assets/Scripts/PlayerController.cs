@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour, TurnObject {
 
     void Start() {
         TurnManager.Instance.turnObjects.Add(this);
+        targetPos = new Vector3(TilePos().x, 0, TilePos().y);
     }
 
     Vector2Int TilePos() {
@@ -33,7 +34,8 @@ public class PlayerController : MonoBehaviour, TurnObject {
             TurnManager.Instance.NewTurn();
         }
         */
-        if(Input.touchSupported) {
+        Debug.Log(Input.touchSupported);
+        if (Input.touchSupported) {
             if(Input.touchCount > 0) {
                 Touch t = Input.GetTouch(0);
                 RaycastHit hit;
