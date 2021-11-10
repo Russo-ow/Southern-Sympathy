@@ -9,7 +9,20 @@ public class PlayerController : MonoBehaviour, TurnObject {
     public GameObject winPopup;
     public GameObject losePopup;
 
-    void Start() {
+    bool levelInitialized;
+
+    void Awake() {
+        foreach(Tile tile in FindObjectsOfType<Tile>())
+            tile.Init();
+        FindObjectOfType<TurnManager>().Init();
+        FindObjectOfType<TileManager>().Init();
+        Init();
+        foreach(Enemy enemy in FindObjectsOfType<Enemy>())
+            enemy.Init();
+        levelInitialized = true;
+    }
+
+    void Init() {
         TurnManager.Instance.turnObjects.Add(this);
         targetPos = new Vector3(TilePos().x, 0, TilePos().y);
     }
@@ -19,6 +32,9 @@ public class PlayerController : MonoBehaviour, TurnObject {
     }
 
     void Update() {
+        if(!levelInitialized)
+            return;
+
         /* Keyboard Input
         if(Input.GetKeyDown(KeyCode.W) && !TileManager.Instance.isObstacle(TilePos().x, TilePos().y + 1)) {
             targetPos = Tile.TileToWorldSpace(TilePos().x, TilePos().y + 1);

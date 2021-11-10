@@ -13,7 +13,7 @@ public class Tile : MonoBehaviour {
     public Material normalTile;
     public Material targetTile;
 
-    private void Awake() {
+    public void Init() {
         pos = WorldToTileSpace(transform.position);
     }
 

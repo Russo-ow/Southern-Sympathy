@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour, TurnObject {
         return Tile.WorldToTileSpace(transform.position);
     }
 
-    void Start() {
+    public void Init() {
         UpdateTargedTiles();
         TurnManager.Instance.turnObjects.Add(this);
     }

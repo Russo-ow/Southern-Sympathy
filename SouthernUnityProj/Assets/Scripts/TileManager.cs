@@ -5,7 +5,7 @@ using UnityEngine;
 public class TileManager : MonoBehaviour {
     public static TileManager Instance;
 
-    void Awake() {
+    public void Init() {
         if(Instance != null) {
             Destroy(Instance.gameObject);
             Debug.LogError("2 TileManagers in scene. Destroying older TileManager.");
