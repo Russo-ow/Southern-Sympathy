@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour, TurnObject {
 
     Vector3 targetPos;
 
+    public GameObject winPopup;
+    public GameObject losePopup;
+
     void Start() {
         TurnManager.Instance.turnObjects.Add(this);
         targetPos = new Vector3(TilePos().x, 0, TilePos().y);
@@ -34,8 +37,7 @@ public class PlayerController : MonoBehaviour, TurnObject {
             TurnManager.Instance.NewTurn();
         }
         */
-        Debug.Log(Input.touchSupported);
-        if (Input.touchSupported) {
+        if(Input.touchSupported) {
             if(Input.touchCount > 0) {
                 Touch t = Input.GetTouch(0);
                 RaycastHit hit;
@@ -67,13 +69,12 @@ public class PlayerController : MonoBehaviour, TurnObject {
 
     public void TurnLateUpdate() {
         Tile currentTile = TileManager.Instance.getTile(targetPos);
-        if(currentTile.isTarget) {
-            FindObjectOfType<LosePopupFlag>().gameObject.SetActive(true);
-            Debug.Log("Death");
-        }
         if(currentTile.isGoal) {
-            FindObjectOfType<WinPopupFlag>().gameObject.SetActive(true);
+            winPopup.SetActive(true);
             Debug.Log("Goal");
+        } else if(currentTile.isTarget) {
+            losePopup.SetActive(true);
+            Debug.Log("Death");
         }
     }
 }

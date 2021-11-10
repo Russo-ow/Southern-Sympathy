@@ -16,10 +16,6 @@ public class Enemy : MonoBehaviour, TurnObject {
         TurnManager.Instance.turnObjects.Add(this);
     }
 
-    void Update() {
-
-    }
-
     public void TurnUpdate() {
         currentDir = DirUtility.NextDir(rotateDir, currentDir);
         UpdateTargedTiles();
