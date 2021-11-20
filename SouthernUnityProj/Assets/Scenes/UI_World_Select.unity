@@ -678,7 +678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62, y: -9.000005}
+  m_AnchoredPosition: {x: 71.163605, y: -9.000005}
   m_SizeDelta: {x: 343.1511, y: 278.0404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752327891
@@ -989,7 +989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -193.1636, y: -9.000005}
+  m_AnchoredPosition: {x: -184, y: -9.000005}
   m_SizeDelta: {x: 343.1511, y: 278.0404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &965193763
@@ -1217,7 +1217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 192.2214, y: -9.000005}
+  m_AnchoredPosition: {x: 201.38501, y: -9.000005}
   m_SizeDelta: {x: 343.1511, y: 278.0404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170589159
@@ -1350,7 +1350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318.9233, y: -9.000005}
+  m_AnchoredPosition: {x: 328.0869, y: -9.000005}
   m_SizeDelta: {x: 343.1511, y: 278.0404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234534973
@@ -1483,7 +1483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -67.3416, y: -9}
+  m_AnchoredPosition: {x: -58.17799, y: -9}
   m_SizeDelta: {x: 343.1511, y: 278.0404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387731965
@@ -2113,7 +2113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.5011, y: -7.9998055}
+  m_AnchoredPosition: {x: -311.3375, y: -7.9998055}
   m_SizeDelta: {x: 343.1511, y: 278.0404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107605293
