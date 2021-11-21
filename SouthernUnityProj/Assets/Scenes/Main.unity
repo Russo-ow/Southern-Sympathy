@@ -1163,6 +1163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9877171e6cd22914685cfa9548a2666f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPopup: {fileID: 0}
+  losePopup: {fileID: 0}
 --- !u!1001 &1544931207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1635,6 +1637,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3754197560612997576, guid: eb696495cf33d1d42858ff21205145b0, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754197560612997576, guid: eb696495cf33d1d42858ff21205145b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77ccf631b2f355542b5d1b29f68bf4a7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb696495cf33d1d42858ff21205145b0, type: 3}
 --- !u!1001 &4575176801871747636
